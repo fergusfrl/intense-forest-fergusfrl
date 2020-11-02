@@ -1,3 +1,3 @@
 module.exports = ({ env }) => ({
-  staticWebsiteBuildURL: env(NETLIFY_BUILD_HOOK),
+  staticWebsiteBuildURL: process.env.NETLIFY_BUILD_HOOK,
 });
