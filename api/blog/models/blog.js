@@ -9,7 +9,8 @@ const axios = require('axios');
 module.exports = {
   lifecycles: {
     afterCreate: async () => {
-      await axios.post(strapi.config.get('staticWebsiteBuildURL'));
+      await axios.post(
+        strapi.config.get('staticWebsiteBuildURL') || process.env.NETLIFY_BUILD_HOOK, {});
     }
   }
 };
