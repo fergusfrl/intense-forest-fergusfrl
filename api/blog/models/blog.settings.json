@@ -42,6 +42,11 @@
       ],
       "plugin": "upload",
       "required": false
+    },
+    "tags": {
+      "collection": "tag",
+      "via": "blogs",
+      "dominant": true
     }
   }
 }
