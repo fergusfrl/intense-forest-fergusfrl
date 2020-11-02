@@ -45,8 +45,7 @@
     },
     "tags": {
       "collection": "tag",
-      "via": "blogs",
-      "dominant": true
+      "via": "blog"
     }
   }
 }

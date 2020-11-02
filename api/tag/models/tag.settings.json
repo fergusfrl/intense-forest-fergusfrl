@@ -24,9 +24,9 @@
       "plugin": "upload",
       "required": false
     },
-    "blogs": {
+    "blog": {
       "via": "tags",
-      "collection": "blog"
+      "model": "blog"
     }
   }
 }
