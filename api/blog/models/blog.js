@@ -12,7 +12,8 @@ module.exports = {
       await axios.post(
         strapi.config.get('staticWebsiteBuildURL') || process.env.NETLIFY_BUILD_HOOK, {});
     },
-    afterUpdate: async () => {
+    afterUpdate: async blog => {
+      console.log('BLOG_ITEM:', blog);
       await axios.post(
         strapi.config.get('staticWebsiteBuildURL') || process.env.NETLIFY_BUILD_HOOK, {});
     }
