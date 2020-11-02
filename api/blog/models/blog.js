@@ -9,7 +9,7 @@ const axios = require('axios');
 module.exports = {
   lifecycles: {
     afterCreate: async () => {
-      await axios.post(strapi.config.currentEnvironment.staticWebsiteBuildURL, {});
+      await axios.post(strapi.config.get('staticWebsiteBuildURL'));
     }
   }
 };
