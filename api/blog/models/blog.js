@@ -5,4 +5,10 @@
  * to customize this model
  */
 
-module.exports = {};
+module.exports = {
+  lifecycles: {
+    afterCreate: async () => {
+      await axios.post(strapi.config.currentEnvironment.staticWebsiteBuildURL, {});
+    }
+  }
+};
