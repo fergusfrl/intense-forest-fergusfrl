@@ -14,7 +14,7 @@ module.exports = ({ env }) => ({
         password: parse(env('DATABASE_URL')).password,
       },
       options: {
-        ssl: false,
+        ssl: true,
       },
     },
   },
