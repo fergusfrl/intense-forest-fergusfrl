@@ -5,13 +5,13 @@ const getServiceAccount = (base64EncodedServiceAccount) => {
   return serviceAccount;
 };
 
-module.exports = {
+module.exports = ({ env }) => ({
   upload: {
     provider: 'google-cloud-storage',
     providerOptions: {
-      bucketName: process.env.GCP_BUCKET_NAME,
-      baseUrl: process.env.GCP_BASE_URL,
-      serviceAccount: getServiceAccount(process.env.GCP_SERVICE_ACCOUNT)
+      bucketName: env('GCP_BUCKET_NAME'),
+      baseUrl: env('GCP_BASE_URL'),
+      serviceAccount: getServiceAccount(env('GCP_SERVICE_ACCOUNT'))
     },
   },
-}
+});
