@@ -2,7 +2,7 @@
   "name": "intense-green-forest",
   "private": true,
   "version": "0.1.0",
-  "description": "A Strapi application",
+  "description": "Strapi CMS for Fergus' Personal Website",
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
@@ -28,7 +28,7 @@
     "strapi-utils": "3.2.5"
   },
   "author": {
-    "name": "A Strapi developer"
+    "name": "Fergus Farrell"
   },
   "strapi": {
     "uuid": "abf26da5-cbad-4282-8031-6a599c130abc"
