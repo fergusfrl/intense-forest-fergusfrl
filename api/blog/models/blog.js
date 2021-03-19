@@ -2,7 +2,6 @@
 const axios = require('axios');
 
 const triggerBuildHook = async item => {
-  console.log('PUBLISHED_AT:', item.published_at);
   if (item.published_at !== null) {
     await axios.post(
       strapi.config.get('staticWebsiteBuildURL') || process.env.NETLIFY_BUILD_HOOK, {});
