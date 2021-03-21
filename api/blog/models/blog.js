@@ -1,9 +1,9 @@
 'use strict';
 const axios = require('axios');
 const firebase = require('firebase');
+const admin = require('firebase-admin');
 const sgMail = require('@sendgrid/mail');
 
-// TODO: initialize firebase application
 firebase.initializeApp({
   apiKey: process.env.GCP_API_KEY,
   projectId: process.env.GCP_PROJECT_ID,
@@ -11,7 +11,7 @@ firebase.initializeApp({
 });
 
 sgMail.setApiKey(process.env.SEND_GRID_API_KEY);
-const database = firebase.firestore();
+const database = admin.firestore();
 
 const triggerBuildHook = async item => {
   if (item.published_at !== null) {
