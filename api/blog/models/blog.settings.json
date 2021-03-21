@@ -45,6 +45,10 @@
     },
     "tags": {
       "collection": "tag"
+    },
+    "finalized": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
