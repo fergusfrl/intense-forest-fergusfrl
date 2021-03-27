@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "training_weeks",
+  "info": {
+    "name": "Training Week",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "overview": {
+      "type": "string"
+    },
+    "fromDate": {
+      "type": "date"
+    },
+    "toDate": {
+      "type": "date"
+    },
+    "totalDistanceCycle": {
+      "type": "integer"
+    },
+    "totalDistanceRun": {
+      "type": "integer"
+    },
+    "totalDistanceKayak": {
+      "type": "integer"
+    },
+    "activities": {
+      "collection": "activity",
+      "via": "training_week"
+    }
+  }
+}

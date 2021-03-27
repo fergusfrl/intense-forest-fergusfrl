@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/training-weeks",
+      "handler": "training-week.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/training-weeks/count",
+      "handler": "training-week.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/training-weeks/:id",
+      "handler": "training-week.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/training-weeks",
+      "handler": "training-week.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/training-weeks/:id",
+      "handler": "training-week.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/training-weeks/:id",
+      "handler": "training-week.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
