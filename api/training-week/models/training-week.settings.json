@@ -12,7 +12,7 @@
   },
   "attributes": {
     "overview": {
-      "type": "string"
+      "type": "text"
     },
     "fromDate": {
       "type": "date"

@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "activities",
   "info": {
-    "name": "Activity"
+    "name": "Activity",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -36,6 +37,9 @@
     "training_week": {
       "via": "activities",
       "model": "training-week"
+    },
+    "startDate": {
+      "type": "date"
     }
   }
 }
