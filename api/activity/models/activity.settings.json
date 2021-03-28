@@ -40,6 +40,9 @@
     },
     "startDate": {
       "type": "date"
+    },
+    "path": {
+      "type": "string"
     }
   }
 }
