@@ -43,6 +43,9 @@
     },
     "path": {
       "type": "text"
+    },
+    "polyline_encoded": {
+      "type": "text"
     }
   }
 }
