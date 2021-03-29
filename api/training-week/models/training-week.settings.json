@@ -30,8 +30,11 @@
       "type": "integer"
     },
     "activities": {
-      "via": "training_week",
-      "collection": "activity"
+      "collection": "activity",
+      "via": "training_week"
+    },
+    "description": {
+      "type": "richtext"
     }
   }
 }

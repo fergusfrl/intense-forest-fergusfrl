@@ -35,8 +35,8 @@
       "type": "decimal"
     },
     "training_week": {
-      "model": "training-week",
-      "via": "activities"
+      "via": "activities",
+      "model": "training-week"
     },
     "startDate": {
       "type": "date"
